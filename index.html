@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dhruv Sadrawala – Coming Soon</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f9f9f9;
+      color: #111;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Background image placeholder */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-image: url('https://images.pexels.com/photos/12214831/pexels-photo-12214831.jpeg'); /* Replace with your background */
+      background-size: cover;
+      background-position: center;
+      opacity: 0.1;
+      z-index: -1;
+    }
+
+    .brand {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      font-family: 'Major Mono Display', monospace;
+      font-size: 1.8rem;
+      color: #000;
+    }
+
+    .container {
+      max-width: 600px;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .typewriter {
+      font-size: 1.2rem;
+      color: #444;
+      border-right: 2px solid #444;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      animation: typing 3s steps(30, end) forwards, blink-caret 0.75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 220px; }
+    }
+
+    @keyframes blink-caret {
+      50% { border-color: transparent; }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #111;
+        color: #fff;
+      }
+
+      .brand {
+        color: #fff;
+      }
+
+      .typewriter {
+        color: #bbb;
+        border-right: 2px solid #bbb;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="brand">Dhruv Sadrawala</div>
+  <div class="container">
+    <h1>Coming Soon</h1>
+    <p class="typewriter">Building clean designs.</p>
+  </div>
+</body>
+</html>
